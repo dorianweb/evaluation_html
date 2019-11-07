@@ -1,0 +1,44 @@
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inner{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo_rdv{
+display: flex;
+  flex-direction: row;
+
+}
+.logo_rdv_logo{
+width: 50%;
+}
+.logo_rdv_rdv {
+width: 50%;
+}
+
+
+.fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fig img{
+  border-radius: 50%;
+}
+
+.fig_container{
+
+}
+
+
+@media screen and (min-width:480px) {
+  
+}
+@media screen and (min-width: 770px) {
+
+}
