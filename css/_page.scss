@@ -1,24 +1,52 @@
+@font-face {
+  font-family: 'Bernina';
+  src: url("BerninaSans-Web-CondensedBold.woff2");
+}
 
-.content{
+$font_color: #064a5d;
+$darker_blue: darken($font_color, 30%);
+$light_blue: #f7ffff;
+
+.title, .mainP {
+  color: $darker_blue;
+}
+
+.ice_exp, figcaption {
+  color: $font_color;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $light_blue;
 }
-.inner{
+
+.inner {
   width: 95%;
   margin: 0 auto;
 }
 
-.logo_rdv{
-display: flex;
+.logo_rdv {
+  display: flex;
   flex-direction: row;
 
 }
-.logo_rdv_logo{
-width: 50%;
+
+.logo_rdv_logo {
+  width: 50%;
 }
+
 .logo_rdv_rdv {
-width: 50%;
+  height: 30px;
+  background: inherit;
+  border-radius: 9%;
+  border-color: lightslategrey;
+
+}
+
+.ice_exp {
+  align-self: flex-start;
 }
 
 
@@ -27,18 +55,41 @@ width: 50%;
   flex-direction: column;
   align-items: center;
 }
-.fig img{
+
+.fig_img {
   border-radius: 50%;
+  width: 100%;
 }
 
-.fig_container{
+.fig_div {
+  width: 90%;
+}
 
+figcaption {
+  font-family: Bernina;
 }
 
 
-@media screen and (min-width:480px) {
-  
+@media screen and (min-width: 480px) {
+  .fig_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .fig {
+    width: 49%;
+  }
+.fig_blue_shadow{
+  width: 49%;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #cdecff;
 }
+}
+
+
 @media screen and (min-width: 770px) {
 
 }
