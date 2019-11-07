@@ -413,8 +413,17 @@ template {
   src: url("BerninaSans-Web-CondensedBold.woff2");
 }
 
+header {
+  display: none;
+}
+
+.img_background {
+  width: 100%;
+}
+
 .title, .mainP {
   color: black;
+  text-align: center;
 }
 
 .ice_exp, figcaption {
@@ -441,6 +450,9 @@ template {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 1%;
 }
 
 .logo_rdv_logo {
@@ -452,6 +464,14 @@ template {
   background: inherit;
   border-radius: 9%;
   border-color: lightslategrey;
+}
+
+.title {
+  margin-bottom: 6%;
+}
+
+.mainP {
+  margin-bottom: 6%;
 }
 
 .ice_exp {
@@ -482,6 +502,16 @@ figcaption {
 }
 
 @media screen and (min-width: 480px) {
+  .logo_rdv {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .logo_rdv_logo {
+    width: 35%;
+  }
+  .logo_rdv_rdv {
+    height: 40px;
+  }
   .fig_container {
     display: -ms-flexbox;
     display: flex;
@@ -500,6 +530,50 @@ figcaption {
     height: 32px;
     border-radius: 50%;
     background-color: #cdecff;
+  }
+  .cryolipose_order {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .gym_order {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .smartphone_order {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .inner {
+    width: 70%;
+  }
+  .logo_rdv {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 1%;
+  }
+  .logo_rdv_logo {
+    width: 20%;
+  }
+  .title {
+    margin-bottom: 3%;
+  }
+  .fig_container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fig {
+    width: 17%;
+  }
+  .fig_blue_shadow {
+    display: none;
+  }
+  .ice_exp {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding-right: 24%;
   }
 }
 
